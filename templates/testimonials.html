@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Client Testimonials</h2>
+<div class="testimonial">
+    <img src="{{ url_for('static', filename='images/testimonial1.jpg') }}" alt="Testimonial 1">
+    <p>"I had an amazing experience at this salon. Highly recommended!" - Sarah</p>
+</div>
+<div class="testimonial">
+    <img src="{{ url_for('static', filename='images/testimonial2.jpg') }}" alt="Testimonial 2">
+    <p>"The staff are very professional and friendly. My favorite salon!" - Emma</p>
+</div>
+{% endblock %}

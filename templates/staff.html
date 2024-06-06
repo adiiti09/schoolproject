@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Our Staff</h2>
+<div class="staff">
+    <img src="{{ url_for('static', filename='images/staff1.jpg') }}" alt="Staff 1">
+    <h3>Jane Doe</h3>
+    <p>Senior Stylist</p>
+</div>
+<div class="staff">
+    <img src="{{ url_for('static', filename='images/staff2.jpg') }}" alt="Staff 2">
+    <h3>Jena Smith</h3>
+    <p>Manicurist</p>
+</div>
+{% endblock %}

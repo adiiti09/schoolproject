@@ -1,29 +1,7 @@
-<!-- templates/index.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Parlour</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Our Beauty Parlour</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Our Services</h2>
-        <p>We offer a variety of beauty services...</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Beauty Parlour</p>
-    </footer>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to Our Beauty Salon</h2>
+<p>Experience the best beauty treatments and services.</p>
+<img src="{{ url_for('static', filename='images/salon.jpg') }}" alt="Beauty Salon">
+{% endblock %}
